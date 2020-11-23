@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>find and findIndex</h1>
+    <script>
+        // let data=[10,20,7,50,1,100];
+        let data = [
+            { id: 10, name: "a" },
+            { id: 8, name: "b" },
+            { id: 50, name: "c" },
+            { id: 1, name: "d" },
+            { id: 100, name: "e" },
+
+        ]
+        let result = data.find(function (item) {
+            return item.id > 50;
+        })
+        console.warn(result)
+    </script>
+</body>
+
+</html>
