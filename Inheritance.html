@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Inheritance</h1>
+    <script>
+        class Category{
+            dryFruit()
+            {
+                return "Almond is dry fruit"
+            }
+            pomeFruit()
+            {
+                return "apple is pome fruit"
+            }
+        }
+        class Fruits extends Category{
+            constructor()
+            {
+                super()
+                console.warn("constructor")
+            }
+            getFruit()
+            {
+                return "you got Apple";
+            }
+        }
+        let f1= new Fruits;
+        let c1= new Category;
+        console.warn(c1.getFruit())
+        // console.warn(c1.dryFruit())
+
+    </script>
+</body>
+
+</html>
