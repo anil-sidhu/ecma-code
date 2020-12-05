@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Lexical Scope for This</h1>
+    <script>
+       let data={
+           list:'friend',
+           names:['bruce','peter','sam'],
+           getFriends:function()
+           {
+              this.names.map((item)=>{
+                  console.warn(this.list,item)
+              })
+           }
+       }
+
+       data.getFriends()
+    </script>
+</body>
+
+</html>
