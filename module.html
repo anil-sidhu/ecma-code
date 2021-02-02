@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Module</h1>
+    <script type="module" defer >
+        import User,{UserOther as UserO,UserVar,UserClass,UOC} from  './user.js'
+        function UserOther()
+        {
+            console.warn("in current file")
+        }
+    //    User();
+    //    UserOther();
+    //    UserO();
+    //    console.warn(UserVar)
+    let UC1= new UserClass();
+    UC1.test()
+    UOC.test()
+    </script>
+</body>
+
+</html>

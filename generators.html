@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Generators</h1>
+    <button onclick="getSetps()">Go step by step</button>
+    <script>
+        function* steps() {
+            let a = 10;
+            let b = 20;
+            console.warn(10 + 20)
+            yield 'step 1 completed'
+            console.warn(10 - 20)
+            yield 'step 2 completed'
+            console.warn(10 * 20)
+            yield 'step 3 completed'
+            return "all steps done"
+        }
+        let stp=steps();
+        function getSetps()
+        {
+            console.warn(stp.next());
+        }
+
+    </script>
+</body>
+
+</html>
